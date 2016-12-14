@@ -1,0 +1,9 @@
+@import "../../shared/styles/index";
+
+@media(max-width: 1100px) {
+  .grid {
+    .half {
+      width: 100% !important;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.box {
+  background-color: white;
+  border: 1px solid #dfe6f4;
+  overflow: hidden;
+  @include border-radius(2px);
+}
+
+.box-long {
+  padding: 25px;
+  div {
+    display: inline-block;
+    h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  span {
+    font-weight: 700;
+    font-size: 24px;
+    padding-top: 10px;
+  }
+}
+
+.box-mini {
+  .count {
+    padding: 25px;
+    div {
+      display: inline-block;
+    }
+    h3 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+  .change {
+    display: block;
+    width: 100%;
+    padding: 10px 25px;
+    color: white;
+  }
+}
+
+.box-default {
+  padding: 25px;
+  margin-bottom: 20px;
+  h3 {
+    font-size: 12px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ebeef3;
+    margin-bottom: 20px;
+  }
+}

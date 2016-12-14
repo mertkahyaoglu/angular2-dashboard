@@ -1,0 +1,29 @@
+.grid {
+  display: block;
+  clear: both;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.grid .unit {
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+
+.grid .whole { width: 100%; }
+.grid .third { width: 75%; }
+.grid .half { width: 50%; }
+.grid .quarter { width: 25%; }
+.grid {
+  *zoom: 1;
+}
+.grid:before, .grid:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.grid:after {
+  clear: both;
+}

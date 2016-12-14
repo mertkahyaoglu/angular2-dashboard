@@ -1,0 +1,45 @@
+@import "../../shared/styles/index";
+
+.timeline {
+  li {
+    padding: 10px 0 10px 25px;
+    position: relative;
+    small {
+      margin-bottom: 10px;
+      font-size: 12px;
+      color: #b0b0b0;
+      display: inline-block;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    &:before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: -5px;
+      top: 7px;
+      border-radius: 50%;
+    }
+  }
+  li.red {
+    border-left: 1px solid $red;
+    &:before {
+      background-color: $red;
+    }
+  }
+  li.green {
+    border-left: 1px solid $green;
+    &:before {
+      background-color: $green;
+    }
+  }
+  li.blue {
+    border-left: 1px solid $blue;
+    &:before {
+      background-color: $blue;
+    }
+  }
+}

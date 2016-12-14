@@ -1,0 +1,18 @@
+@mixin img-responsive {
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+
+@mixin transition($property, $timing, $func) {
+  -webkit-transition: $property $timing $func; /* Safari and Chrome */
+  -moz-transition: $property $timing $func; /* Firefox */
+  -ms-transition: $property $timing $func; /* Opera */
+  transition: $property $timing $func;
+}
+
+@mixin border-radius($radius...) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+          border-radius: $radius;
+}

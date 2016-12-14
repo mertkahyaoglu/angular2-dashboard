@@ -1,0 +1,45 @@
+<aside [class.hidden]="hidden">
+  <div class="sidebar-wrapper">
+    <div class="user-panel">
+      <div class="pull-left">
+        <img class="avatar" src="{{user.avatar}}" alt="" />
+      </div>
+      <div class="pull-left info">
+        <p>{{user.name}}</p>
+        <a href="#">{{user.title}} <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="sidebar-menu">
+      <p>UI Kits</p>
+      <ul>
+        <li>
+          <a routerLink="/dashboard" [routerLinkActive]="['active']"><i class="fa fa-home" aria-hidden="true"></i> Dashboard</a>
+        </li>
+        <li>
+          <a routerLink="/apps" [routerLinkActive]="['active']"><i class="fa fa-bolt" aria-hidden="true"></i> Apps
+            <small *ngIf="notifications.apps != 0" class="label pull-right bg-red">{{notifications.apps}}</small>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/components" [routerLinkActive]="['active']"><i class="fa fa-expeditedssl" aria-hidden="true"></i> Components
+            <small *ngIf="notifications.components != 0" class="label pull-right bg-green">{{notifications.components}}</small>
+          </a>
+        </li>
+        <li>
+          <a routerLink="/emails"><i class="fa fa-envelope" aria-hidden="true"></i> Emails
+            <small *ngIf="notifications.emails != 0" class="label pull-right bg-blue">{{notifications.emails}}</small>
+          </a>
+        </li>
+        <div class="splitter"></div>
+        <li>
+          <a routerLink="/settings" [routerLinkActive]="['active']"><i class="fa fa-cog" aria-hidden="true"></i>Settings</a>
+        </li>
+        <li>
+          <a routerLink="/documents" [routerLinkActive]="['active']"><i class="fa fa-clipboard" aria-hidden="true"></i> Documents
+            <small *ngIf="notifications.documents != 0" class="label pull-right bg-blue">{{notifications.documents}}</small>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</aside>

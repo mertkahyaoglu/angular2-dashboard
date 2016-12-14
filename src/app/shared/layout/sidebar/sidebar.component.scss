@@ -1,0 +1,80 @@
+@import "../../styles/index";
+
+aside {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+  padding-top: $header-height;
+  min-height: 100%;
+  width: $sidebar-width;
+  box-shadow: 1px 0 3px #ddd;
+  z-index: 10;
+  @media(max-width: 768px) {
+    &.hidden {
+      display: none;
+    }
+    padding-top: $mobile-header-height;
+    right: 0;
+    width: auto;
+    min-height: auto;
+  }
+  .sidebar-wrapper {
+    height: auto;
+    .user-panel {
+      display: table;
+      width: 100%;
+      padding: 30px;
+      border-bottom: 1px solid #f2f4f8;
+      .avatar {
+        width: 100%;
+        max-width: 64px;
+        height: auto;
+        @include border-radius(50%);
+      }
+      .info {
+        padding: 15px;
+        p {
+          color: $sidebar-text-color;
+          font-size: 12px;
+          font-weight: 700;
+          margin: 0 0 10px;
+        }
+        a {
+          font-size: 10px;
+          color: $sidebar-text-color;
+          font-weight: 500;
+        }
+      }
+    }
+    .sidebar-menu {
+      p {
+        padding-left: 30px;
+        margin-top: 30px;
+        font-size: 10px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      ul {
+        li {
+          a {
+            display: block;
+            padding: 15px 30px;
+            color: $sidebar-text-color;
+            font-weight: 700;
+            &:hover {
+              color: $blue;
+              background-color: #f5f7f9;
+            }
+            &.active {
+              background-color: #f5f7f9;
+            }
+            i {
+              margin-right: 6px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

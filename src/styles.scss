@@ -1,0 +1,60 @@
+@import "assets/styles/reset.css";
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #edf0f5;
+  min-height: 100%;
+  color: #282828;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Fonts */
+@font-face {
+  font-family: 'Raleway';
+  font-weight: normal;
+  src: local('Raleway Regular'), url('assets/fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  src: local('Raleway Medium'), url('assets/fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 600;
+  src: local('Raleway Semi Bold'), url('assets/fonts/Raleway-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  src: local('Raleway Bold'), url('assets/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 700;
+  src: local('Lato Bold'), url('assets/fonts/Lato-Bold.ttf');
+}

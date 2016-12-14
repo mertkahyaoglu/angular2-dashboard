@@ -1,0 +1,71 @@
+.sidebar-open {
+  margin-left: $sidebar-width;
+  @media(max-width: 768px) {
+    margin-left: 0;
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-green {
+  background-color: $green;
+}
+
+.bg-blue {
+  background-color: $blue;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.label {
+  display: inline;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  @include border-radius(4px);
+}
+
+.label-circle {
+  @include border-radius(50%);
+}
+
+.splitter {
+  height: 1px;
+  width: 100%;
+  margin: 15px 0;
+  border-bottom: 1px solid #f2f4f8;
+}
